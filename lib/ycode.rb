@@ -1,7 +1,10 @@
+require "cgi"
 require "ycode/version"
 require "ycode/base"
-require "ycode/string_extensions"
 
 module Ycode
-	# Your code goes here...
+	def self.to_html(str)
+		@ycode ||= Ycode::Base.new
+		@ycode.parse_to_html str
+	end
 end

@@ -36,9 +36,4 @@ describe Ycode::Base do
 		get_stripped_parser_result("black ^1 _bold & red_").should \
 			eql %(black </span><span class="color color1"> <strong>bold &amp; red</strong>)
 	end
-
-	it "should be able to link to user profiles" do
-		get_stripped_parser_result("check profile of\r\n//tobyhinloopen\r\n\r\nHe's awesome!").should \
-			eql %(check profile of<br><a href="user_by_username.php?username=tobyhinloopen">tobyhinloopen</a><br><br>He's awesome!)
-	end
 end
