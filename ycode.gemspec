@@ -12,10 +12,10 @@ Gem::Specification.new do |s|
   s.description = %q{Custom-markup parser for http://y-ch.at/}
 
   s.rubyforge_project = "ycode"
-	s.add_dependency "will_scan_string", "~> 0.0.2"
-	s.add_development_dependency "rspec", "~> 2.6"
-	s.add_dependency "activesupport", "~> 3.0.9"
-	s.add_dependency "i18n", "~> 0.5.0"
+	s.add_dependency "will_scan_string"
+	s.add_development_dependency "rspec"
+	s.add_dependency "activesupport"
+	s.add_dependency "i18n"
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
